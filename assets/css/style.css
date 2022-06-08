@@ -165,23 +165,27 @@ a {
   object-fit: cover;
 }
 
-.fundo-genera {
+.fundo-favelainova {
   background-color: #2b3e64;
   color: #fff;
 }
 
-.color-genera {
+.color-favelainova {
   color: #2b3e64;
 }
 
-.destaque-genera {
+.destaque-favelainova {
   font-family: "Raleway", sans-serif;
   font-size: 2rem;
   font-weight: 800;
   text-transform: uppercase;
 }
 
-.cabecalho-genera {
+/*.favelacor{
+  color: #ED6966;
+}*/
+
+.cabecalho-favelainova {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
 }

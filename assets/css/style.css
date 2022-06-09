@@ -1,5 +1,5 @@
 body{
-  background-color:#dde4f0; 
+  background-color:#f0e2dd; 
 }
 
 nav li {
@@ -181,10 +181,13 @@ a {
   text-transform: uppercase;
 }
 
-/*.favelacor{
-  color: #ED6966;
-}*/
+.favelacor{
+  color: #e94c49;
+}
 
+.inovacor{
+  color: #1f1d1d;
+}
 .cabecalho-favelainova {
   font-family: "Raleway", sans-serif;
   font-weight: 600;

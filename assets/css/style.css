@@ -55,7 +55,7 @@ a {
 }
 
 .facaparte-green {
-  background-color: #3eb595;
+  background-color: #b0e61d;
   color: white;
   min-height: 370px;
 }
@@ -70,7 +70,7 @@ a {
   min-height: 170px;
 }
 
-.footer {
+.footer {/*rodapé*/
   padding: 20px;
   left: 0;
   bottom: 0;
@@ -166,7 +166,7 @@ a {
 }
 
 .fundo-favelainova {
-  background-color: #2b3e64;
+  background-color: #000000;
   color: #fff;
 }
 

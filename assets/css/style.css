@@ -9,12 +9,12 @@ nav li {
 }
 
 .nav-item a:hover {
-  color: #8b8e91 !important;
+  color: #696a6b !important;
   background-color: rgba(32, 31, 31, 0.473);
 }
 
 a {
-  color:black;
+  color:rgb(255, 255, 255);
   text-decoration: none;
 }
 
@@ -28,11 +28,15 @@ a {
   /*color: #b0afb3;*/
   opacity: 0.8;
 }
-
-.myCard { /*edital*/
+/* EDITAL */
+.myCard { 
   margin: 20px auto;
   width: 95%;
 }
+.btn a:hover{
+  color: #696a6b !important;
+}
+
 /*.carousel {
   width: 100%;
   min-height: 500px;
@@ -45,34 +49,9 @@ a {
 .text-justify {
   text-align: justify;
 }
-/*
-#facaparte-container {
-  background-color: #294171;
-  padding: 60px 0px;
-  margin-top: 20px;
-}
 
-.facaparte-box {
-  padding: 40px;
-}
-
-.facaparte-green {
-  background-color: #b0e61d;
-  color: white;
-  min-height: 370px;
-}
-
-.facaparte-blue {
-  background-color: #389bc2;
-  color: white;
-  min-height: 370px;
-}
-
-.facaparte-box p {
-  min-height: 170px;
-}*/
-
-.footer {/*rodapé*/
+/* RODAPÉ */
+.footer {
   padding: 20px;
   left: 0;
   bottom: 0;
@@ -155,17 +134,9 @@ a {
   color: #125688;
   background: #fefefe;
   border-color: #125688;
-}
-/*
-.conselho-foto {
-  width: 128px;
-  height: 128px;
-}
+} 
+/* FIM RODAPÉ */
 
-.conselho-foto img {
-  height: 100%;
-  object-fit: cover;
-}*/
 
 .fundo-favelainova {
   background-color: #000000;

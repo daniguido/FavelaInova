@@ -28,14 +28,24 @@ a {
   /*color: #b0afb3;*/
   opacity: 0.8;
 }
+
 /* EDITAL */
 .myCard { 
   margin: 20px auto;
   width: 95%;
 }
 .btn a:hover{
-  color: #696a6b !important;
+  color: #767779 !important;
 }
+.btn-outline-info a {
+  color:#1d9696;
+  text-decoration: none;
+}
+.btn-outline-warning a {
+  color:#c4b214;
+  text-decoration: none;
+}
+
 
 /*.carousel {
   width: 100%;

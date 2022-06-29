@@ -12,8 +12,9 @@ nav li {
 .navlink {
   color: #000000;
   font-size: 14px;
-  /*display: inline-block;*/
+  display: inline-block;
 }
+
 
 .navitem a:hover, .navlink:active{ 
   color: #f38a12 !important;
@@ -21,15 +22,6 @@ nav li {
   display: block;
   font-size: 100%;
 }
-
-
-/*a:active,
-a:hover {
-  outline: 0;
-}
-.disable-pointer-events {
-  pointer-events: none !important;
-}*/
 /* FIM MENU */
 
 a {

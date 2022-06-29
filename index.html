@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+  <meta name="description" content="Projeto De Impacto Social E Sustentável - Realizado pelo Instituto Genera em parceria com a UNISUAM através do Pólen - Polo de Inovação da UNISUAM, com o intuito de atrair, fomentar e promover o empreendedorismo de Jovens de favela residentes de regiões com vulnerabilidade social."/>
   <title>Início &lsaquo; Favela Inova</title>
   <link rel="icon" href="assets/images/favicon.png" />
 
@@ -27,13 +27,16 @@
   <!-- Animate CSS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
+  <!-- Nosso JS -->
+  <script type="text/javascript" src=index.js></script>
+
   <!-- Nosso CSS -->
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 <body>
   <!-- INÍCIO NAVBAR -->
-  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark ">
+  <nav class="navbar sticky-top navbar-expand-lg bg-light ">
     <div class="container">
       <a class="navbar-brand" href="index.html">
         <img src="assets/images/logo.png" alt="" class="d-inline-block align-text-top" width="160"
@@ -44,33 +47,35 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-         <li class="nav-item">
-            <a class="nav-link text-light" href="index.html">INÍCIO</a>
+      <nav class="collapse navbar-collapse" id="navbarSupportedContent">
+        <a href="javascript:void(0)" class="desmarca"></a>
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
+         <li class="navitem">
+            <a class="navlink" type="" href="index.html"  onclick="selectNav(this)">INÍCIO</a>
           </li>
-          <li class="nav-item"> <!-- mx-5 aumenta para os lados -->
-            <a class="nav-link text-light" href="projetos.html">PROJETOS</a>
+          <li class="navitem"> <!-- mx-5 aumenta para os lados -->
+            <a class="navlink" href="projetos.html" onclick="selectNav(this)">PROJETOS</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" href="editais.html">EDITAIS</a>
+          <li class="navitem">
+            <a class="navlink" href="editais.html" onclick="selectNav(this)">EDITAIS</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" href="imprensa.html">IMPRENSA</a>
+          <li class="navitem">
+            <a class="navlink" href="imprensa.html" onclick="selectNav(this)">IMPRENSA</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" aria-current="page" href="parceiros.html">PARCEIROS</a>
+          <li class="navitem">
+            <a class="navlink" aria-current="page" href="parceiros.html" onclick="selectNav(this)">PARCEIROS</a>
           </li>
-          <!--<li class="nav-item">
-            <a class="nav-link text-light" href="participe.html">Participe</a>
+          <!--<li class="navitem">
+            <a class="navlink text-light" href="participe.html">Participe</a>
           </li>-->
 
-          <li class="nav-item">
-            <a class="nav-link text-light" aria-current="page" href="#contatos">CONTATOS</a>
+          <li class="navitem">
+            <a class="navlink" aria-current="page" href="#contatos" onclick="selectNav(this)">CONTATOS</a>
           </li>
 
         </ul>
-      </div>
+      </nav>
     </div>
   </nav>
   <!-- FIM NAVBAR -->

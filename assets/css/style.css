@@ -1,5 +1,5 @@
 body{
-  background-color: #aaa6a6; 
+  background-color: #dddddd; 
 }
 
 /* MENU */
@@ -7,15 +7,12 @@ nav li {
   list-style: none;
   cursor: pointer;
   margin: 15px;
-  
 }
 .navlink {
-  color: #000000;
+  color: #ffffff;
   font-size: 14px;
   display: inline-block;
 }
-
-
 .navitem a:hover, .navlink:active{ 
   color: #f38a12 !important;
   border-bottom: #f38a12 4px  solid;
@@ -33,17 +30,18 @@ a {
   min-height: 96px;
 }
 
-.font {
-  font-family: "Anton", sans-serif;
-  margin: 0;
-  /*color: #b0afb3;*/
-  opacity: 0.8;
-}
+
 
 /* EDITAL */
 .myCard { 
   margin: 20px auto;
   width: 95%;
+}
+.font {
+/*  font-family: "Anton", sans-serif;*/
+  margin: 0;
+  /*color: #b0afb3;*/
+  opacity: 0.8;
 }
 .btn a:hover{
   color: #767779 !important;
@@ -51,6 +49,7 @@ a {
 .btn-outline-info a {
   color:#1d9696;
   text-decoration: none;
+
 }
 .btn-outline-warning a {
   color:#c4b214;
@@ -70,94 +69,6 @@ a {
 .text-justify {
   text-align: justify;
 }
-
-/* RODAPÉ */
-.footer {
-  padding: 20px;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: whitesmoke;
-  color: black;
-  list-style: none;
-}
-
-.footer .endereco {
-  font-size: 16px;
-}
-
-.footer .endereco h4 {
-  font-size: 16px;
-  margin-top: 0.25rem;
-  margin-bottom: 0;
-}
-
-.footer .endereco span {
-  display: block;
-  margin-top: 0.25rem;
-  margin-bottom: 0;
-}
-
-.rounded-social-buttons {
-  text-align: right;
-}
-
-.rounded-social-buttons .social-button {
-  display: inline-block;
-  position: relative;
-  cursor: pointer;
-  width: 5rem;
-  height: 5rem;
-  border: 0.25rem solid transparent;
-  padding: 0;
-  text-decoration: none;
-  text-align: center;
-  color: #fefefe;
-  font-size: 1.5625rem;
-  font-weight: normal;
-  line-height: 2em;
-  border-radius: 1.6875rem;
-  transition: all 0.5s ease;
-  margin-right: 0.25rem;
-  margin-bottom: 0.25rem;
-}
-
-.rounded-social-buttons .social-button:hover,
-.rounded-social-buttons .social-button:focus {
-  -webkit-transform: rotate(360deg);
-  -ms-transform: rotate(360deg);
-  transform: rotate(360deg);
-}
-
-.rounded-social-buttons,
-.fa-linkedin,
-.fa-instagram {
-  font-size: 70px;
-}
-
-.rounded-social-buttons .social-button.linkedin {
-  background: #007bb5;
-}
-
-.rounded-social-buttons .social-button.linkedin:hover,
-.rounded-social-buttons .social-button.linkedin:focus {
-  color: #007bb5;
-  background: #fefefe;
-  border-color: #007bb5;
-}
-
-.rounded-social-buttons .social-button.instagram {
-  background: #125688;
-}
-
-.rounded-social-buttons .social-button.instagram:hover,
-.rounded-social-buttons .social-button.instagram:focus {
-  color: #125688;
-  background: #fefefe;
-  border-color: #125688;
-} 
-/* FIM RODAPÉ */
-
 
 .fundo-favelainova { /*Missao*/
   background-color: #181616;
@@ -190,71 +101,99 @@ a {
   font-weight: 600;
 }
 
-/*.icone-objetivo {
+.icone-objetivo {
   font-size: 48px;
   color: #676767;
+
 }
-*/
-.projetos-foto {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
+.icon{
+  width: 70px;
+  height: 70px;
 }
 
+/*    PARCEIROS   */
+.text{
+  font-size: 15px;
+  color: #000000;
+  text-align: center;
+}
 .parceiros-colecao {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-
 .parceiros-item {
   width: 140px;
   height: 140px;
   padding: 8px;
   margin: 20px 20px;
   }
-
 .parceiros-colecao2{ /*geral*/
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  
 }
-
-.parceiros-conjuto{ /**/
+.parceiros-conjuto{ 
   width: 265px;
   height: 185px;    
  }
-
  .parceiros-item2{
   width: 190px;
   height: 140px;
   margin: 15px 40px;
  }
-.text{
-  font-size: 12px;
-  color: #413f3f;
-  text-align: center;
-}
-
-.parceiros-logo {
+ .parceiros-logo {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
+.container-parceiros {
+  min-height: 72vh;
+}
+/*    FIM PARCEIROS   */
+ 
+/*      PROJETOS      */
+.projetos-foto {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
 
-.conteudo-img-card {
+
+.favelacorN{     
+  color: #db0303f3;
+}
+.projetos-titulo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+.projetos-coordenacao {
+  text-transform: uppercase;
+}
+.projetos-foto {
+  width: 230px;
+  height: 230px;
+}
+.projetos-foto img {
+  border-radius: 16px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/*     FIM PROJETO     */
+
+
+/*     IMPRENSA      */
+.conteudo-img-card { 
   height: 190px;
   object-fit: cover;
   object-position: center center;
 }
-
 .titulo-noticias {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 700;
 }
-
 .subtitulo-noticias {
   font-size: 14px;
   color: #7a7d6c;
@@ -269,9 +208,6 @@ a {
   text-decoration: inherit;
 }
 
-.container-parceiros {
-  min-height: 72vh;
-}
 
 .display-1,
 .display-2,
@@ -279,28 +215,9 @@ a {
   font-family: "Raleway", sans-serif;
 }
 
-.projetos-titulo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-}
 
-.projetos-coordenacao {
-  text-transform: uppercase;
-}
 
-.projetos-foto {
-  width: 240px;
-  height: 135px;
-}
-
-.projetos-foto img {
-  border-radius: 16px;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* div quem somos */
+/*       DIV SOMOS      */
 .hero-image {   /*cor de fundo*/  
   background-image: linear-gradient(rgba(82, 80, 80, 0.37), rgba(8, 8, 8, 0.829)),
     url("../images/home/hero.jpg");
@@ -322,8 +239,83 @@ a {
   color: #1f1d1dcb;
   text-shadow: 2px 2px 4px rgb(255, 253, 253);
 } /* FIM textos*/
-/*FIM div quem somos*/
+/*      FIM DIV SOMOS       */
 
-.email{
-  color: #000000;
+/*      RODAPÉ      */
+.footer {
+  padding: 20px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(31, 31, 31);
+  color: rgb(255, 251, 251);
+  list-style: none;
 }
+.footer .endereco {
+  font-size: 16px;
+}
+.footer .endereco h4 {
+  font-size: 16px;
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+.footer .endereco span {
+  display: block;
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+.rounded-social-buttons {
+  text-align: right;
+}
+.rounded-social-buttons .social-button {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 5rem;
+  height: 5rem;
+  border: 0.25rem solid transparent;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  color: #fefefe;
+  font-size: 1.5625rem;
+  font-weight: normal;
+  line-height: 2em;
+  border-radius: 1.6875rem;
+  transition: all 0.5s ease;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+.rounded-social-buttons .social-button:hover,
+.rounded-social-buttons .social-button:focus {
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+.rounded-social-buttons,
+/*.fa-linkedin,*/
+.fa-instagram {
+  font-size: 70px;
+}
+/*.rounded-social-buttons .social-button.linkedin {
+  background: #007bb5;
+}
+.rounded-social-buttons .social-button.linkedin:hover,
+.rounded-social-buttons .social-button.linkedin:focus {
+  color: #007bb5;
+  background: #fefefe;
+  border-color: #007bb5;
+}*/
+.rounded-social-buttons .social-button.instagram {
+  background: #125688;
+}
+.rounded-social-buttons .social-button.instagram:hover,
+.rounded-social-buttons .social-button.instagram:focus {
+  color: #125688;
+  background: #fefefe;
+  border-color: #125688;
+} 
+.email{
+  color: #ffffff;
+}
+/*    FIM RODAPÉ      */

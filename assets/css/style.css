@@ -14,8 +14,8 @@ nav li {
   display: inline-block;
 }
 .navitem a:hover, .navlink:active{ 
-  color: #767779 !important;
-  border-bottom: #767779 4px  solid;
+  color: #ef7d00 !important;
+  border-bottom: #ea5a33 4px  solid;
   display: block;
   font-size: 100%;
 }
@@ -186,12 +186,12 @@ a {
 
 /*     IMPRENSA      */
 /* Modelo da caixa de texto */
-/*.block-with-text {
+.block-with-text {
   overflow: hidden;
   position: relative;
   line-height: 1.2em;
   max-height: 6em; /* aqui vc controla a altura da caixa de texto */
-/*  text-align: justify;
+  text-align: justify;
 }
 .block-with-text:before {
   content: '...';
@@ -200,7 +200,12 @@ a {
   bottom: 0;
   background-color: #ffffff;
   padding: 0 0px 0 0.25em;
-}*/
+}
+.block-with-text::after, .block-with-text:active{ /* .navlink:active*/
+  overflow: visible; /*Deixa visivel*/
+  height: 100%;
+  
+}
 
 .conteudo-img-card { 
   height: 190px;

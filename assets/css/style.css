@@ -185,6 +185,23 @@ a {
 
 
 /*     IMPRENSA      */
+/* Modelo da caixa de texto */
+/*.block-with-text {
+  overflow: hidden;
+  position: relative;
+  line-height: 1.2em;
+  max-height: 6em; /* aqui vc controla a altura da caixa de texto */
+/*  text-align: justify;
+}
+.block-with-text:before {
+  content: '...';
+  position: absolute;
+  right: 0px;
+  bottom: 0;
+  background-color: #ffffff;
+  padding: 0 0px 0 0.25em;
+}*/
+
 .conteudo-img-card { 
   height: 190px;
   object-fit: cover;
@@ -316,6 +333,41 @@ a {
   background: #fefefe;
   border-color: #125688;
 } 
+
+
+
+.rounded-maps-buttons {
+  text-align: right;
+
+}
+.rounded-maps-buttons .maps-button {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 18rem;
+  height: 4rem;
+  border: 0.25rem solid transparent;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+  font-size: 17px;
+
+}
+.rounded-maps-buttons .maps-button:hover,
+.rounded-maps-buttons .maps-button:focus {
+/*  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);*/
+  font-size: 18px;
+}
+.rounded-maps-buttons,
+/*.fa-linkedin,*/
+.fa-map-marker-alt {
+  font-size: 25px;
+  color:tomato;
+}
+
 .email{
   color: #ffffff;
 }

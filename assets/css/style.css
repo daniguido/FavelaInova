@@ -203,14 +203,66 @@ a {
 /*     IMPRENSA      */
 
 
-#mais{
+#mais1{
   display: none;
 }
-#btnVerMais{
+#mais2{
+  display: none;
+}
+#mais3{
+  display: none;
+}
+#mais4{
+  display: none;
+}
+#mais5{
+  display: none;
+}
+#mais6{
+  display: none;
+}
+#mais7{
+  display: none;
+}
+#mais8{
+  display: none;
+}
+
+
+#btnVerMais1{
   color: blue;
   cursor: pointer;
-  
 }
+#btnVerMais2{
+  color: blue;
+  cursor: pointer;
+}
+#btnVerMais3{
+  color: blue;
+  cursor: pointer;
+}
+#btnVerMais4{
+  color: blue;
+  cursor: pointer;
+}
+#btnVerMais5{
+  color: blue;
+  cursor: pointer;
+}
+#btnVerMais6{
+  color: blue;
+  cursor: pointer;
+}
+#btnVerMais7{
+  color: blue;
+  cursor: pointer;
+}
+#btnVerMais8{
+  color: blue;
+  cursor: pointer;
+}
+
+
 .card-body{
     flex: 1 1 auto;
     padding: 1rem 1rem;

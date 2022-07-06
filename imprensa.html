@@ -10,10 +10,10 @@
   <link rel="icon" href="assets/images/favicon.png" />
 
   <!-- Fontes -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <!--<link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Raleway:wght@400;600;800&display=swap"
-    rel="stylesheet">
+    rel="stylesheet"> -->
 
   <!-- Font Awesome -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
@@ -33,7 +33,7 @@
 
 <body>
   <!-- INÍCIO NAVBAR -->
-  <nav class="navbar sticky-top navbar-expand-lg navbar-dark navbar-light" style="background-color: rgb(0, 0, 0)"><!--bg-light "-->
+  <nav class="navbar sticky-top navbar-expand-lg " ><!--navbar-dark bg-dark bg-light "  style="background-color: rgb(0, 0, 0)"-->
     <div class="container">
       <a class="navbar-brand" href="index.html">
         <img src="assets/images/logo.png" alt="" class="d-inline-block align-text-top" width="160"
@@ -98,16 +98,31 @@
               </a>
             </h2>
             <p class="subtitulo-noticias">Prefeitura Rio</p>
-            <p class="card-text block-with-text">
+
+            <p class="card-text" > 
+              A Secretaria Especial da Juventude (JUV-Rio), em parceria com o Polén – Polo de Inovação da Unisuam, 
+              lança nesta sexta-feira (19/03) o edital do programa Favela Inova. O objetivo é <span id="pontos">...</span><span id="mais"> potencializar o 
+              perfil empreendedor de moradores de comunidades e periferias do Rio que tenham uma proposta de 
+              negócio, ideia de projeto ou empresa em estruturação. O projeto dará sustentabilidade a médio 
+              e longo prazos às ideias inovadoras desenvolvidas nesses territórios.</span><a onclick="vermais()" id="btnVerMais">Ver mais</a>
+            </p>
+            
+            
+
+            <!-- FUNCIONOU 1
+              <p class="card-text hidden" id="ma"> 
               A Secretaria Especial da Juventude (JUV-Rio), em parceria com o Polén – Polo de Inovação da Unisuam, 
               lança nesta sexta-feira (19/03) o edital do programa Favela Inova. O objetivo é potencializar o 
               perfil empreendedor de moradores de comunidades e periferias do Rio que tenham uma proposta de 
               negócio, ideia de projeto ou empresa em estruturação. O projeto dará sustentabilidade a médio 
-              e longo prazos às ideias inovadoras desenvolvidas nesses territórios. 
-              
+              e longo prazos às ideias inovadoras desenvolvidas nesses territórios.
             </p>
-            <a href="#" onclick="" id="btnLeiaMais">Mais...</a>
+
+            <input type="button" value="Mostrar/ocultar" onclick="mostra('ma')" > -->
+
+           
           </div>
+          
           <a href="https://prefeitura.rio/juventude/programa-favela-inova-da-oportunidade-a-jovens-empreendedores/" class="btn btn-primary">Veja mais</a>
         </div>
       </div>
@@ -130,11 +145,11 @@
             </h2>
             <p class="subtitulo-noticias">Diario do Porto</p>
             <p class="card-text">
-              Jovens de 18 a 29 anos em situação de vulnerabilidade vão ganhar uma oportunidade de 
+              Jovens de 18 a 29 anos em situação de vulnerabilidade vão<span id="pontos">...</span><span id="mais"> ganhar uma oportunidade de 
               desenvolver novos negócios. O programa Favela Inova Rio 2.0 está com as suas inscrições 
               abertas. O evento é gratuito e pretende promover a transformação social através do 
               fomento ao empreendedorismo de jovens nessa faixa etária. O Favela Inova Rio 2.0 é 
-              promovido pelo Pólen, o Polo de Inovação da Unisuam, e pela Secretaria de Juventude do Rio de Janeiro.
+              promovido pelo Pólen, o Polo de Inovação da Unisuam, e pela Secretaria de Juventude do Rio de Janeiro.</span><a onclick="vermais()" id="btnVerMais">Ver mais</a>
             </p>
           </div>
           <a href="https://diariodoporto.com.br/favela-inova-rio-2-0-abre-inscricoes-para-jovens-empreendedores/"
@@ -158,9 +173,9 @@
             <p class="card-text">
               A Prefeitura do Rio lançou, nesta quinta-feira, 28, a segunda edição do Favela Inova, 
               uma parceria da Secretaria Especial de Juventude (JUVRio) com o Polo de Inovação da 
-              UNISUAM (Pólen). Ao todo, serão 100 vagas de capacitação profissional e empresarial para 
+              UNISUAM (Pólen). Ao todo, serão <span id="pontos">...</span><span id="mais">100 vagas de capacitação profissional e empresarial para 
               jovens de 18 a 29 anos das periferias cariocas. As melhores propostas e ideias 
-              apresentadas receberão como prêmio bolsas de graduação 100% gratuitas.
+              apresentadas receberão como prêmio bolsas de graduação 100% gratuitas.</span><a onclick="vermais()" id="btnVerMais">Ver mais</a>
             </p>
           </div>
           <a href="https://odia.ig.com.br/economia/empregos-e-negocios/2022/04/6390048-prefeitura-do-rio-lanca-a-segunda-edicao-do-favela-inova.html" class="btn btn-primary">Veja mais</a>
@@ -184,11 +199,11 @@
             <p class="subtitulo-noticias">Prefeitura de Niterói</p>
             <p class="card-text">
               A Prefeitura de Niterói participou, nesta quinta-feira (05), do lançamento da segunda edição 
-              do Programa Favela Inova Niterói. Jovens de comunidades de Niterói que tenham entre 
+              do Programa Favela Inova Niterói. Jovens de comunidades de<span id="pontos">...</span><span id="mais">Niterói que tenham entre 
               18 e 29 anos podem se inscrever no programa Favela Inova Niterói 2.0, que tem como objetivo 
               incentivar o empreendedorismo em diversos segmentos e dar oportunidade estimulando a criação 
               de startups. O programa irá premiar os idealizadores dos projetos vencedores com bolsas de 
-              estudo integrais para qualquer curso de graduação da UNISUAM.
+              estudo integrais para qualquer curso de graduação da UNISUAM.</span><a onclick="vermais()" id="btnVerMais">Ver mais</a>
             </p>
           </div>
           <a href="http://www.niteroi.rj.gov.br/2022/05/05/segunda-edicao-do-favela-inova-niteroi-e-lancado-para-jovens-empreendedores-em-situacao-de-vulnerabilidade/"
@@ -215,12 +230,12 @@
             <p class="card-text">
               A crescente onda de desemprego no Brasil atingiu a população de maneira geral, 
               mas a situação é ainda mais caótica quando falamos das favelas. 
-              A pesquisa Coronavírus nas Favelas: A Desigualdade e o Racismo sem Máscaras, 
+              A <span id="pontos">...</span><span id="mais">pesquisa Coronavírus nas Favelas: A Desigualdade e o Racismo sem Máscaras, 
               realizada no ano passado pelo coletivo Movimentos, com apoio do Centro de 
               Estudos de Segurança e Cidadania (CESeC), constatou que apenas 26% dos 
               moradores das favelas do Rio de Janeiro possuem emprego com carteira assinada. 
               Os dados se tornam ainda mais alarmantes quando nos deparamos com 54% do total 
-              de moradores que perderam o emprego durante a pandemia.
+              de moradores que perderam o emprego durante a pandemia.</span><a onclick="vermais()" id="btnVerMais">Ver mais</a>
             </p>
           </div>
           <a href="https://www.terra.com.br/comunidade/visao-do-corre/bora-empreender/como-estruturar-para-ter-um-negocio-nas-periferias,3886ebb570c077e7261f8e2bd9e19c13nupfehbd.html"
@@ -245,11 +260,11 @@
             <p class="subtitulo-noticias">Expresso Carioca</p>
             <p class="card-text">
               O programa Favela Inova Rio 2.0, promovido pelo Pólen, o Polo de Inovação da UNISUAM, 
-              e pela Secretaria de Juventude do Rio de Janeiro, está com as suas inscrições abertas 
+              e pela Secretaria de Juventude do<span id="pontos">...</span><span id="mais"> Rio de Janeiro, está com as suas inscrições abertas 
               até a próxima sexta-feira, 20. Assim como nas edições anteriores, a ideia do projeto 
               é promover a transformação social através do fomento ao empreendedorismo de jovens 
               entre 18 e 29 anos que vivem em situação de vulnerabilidade para atrair e 
-              desenvolver novos negócios.
+              desenvolver novos negócios.</span><a onclick="vermais()" id="btnVerMais">Ver mais</a>
             </p>
           </div>
           <a href="https://www.expressocarioca.com.br/favela-inova-rio-2-0-esta-com-inscricoes-abertas-para-jovens-empreendedores/"
@@ -273,9 +288,9 @@
             <p class="subtitulo-noticias">Band UOL</p>
             <p class="card-text">
               Apenas dois em cada dez moradores de favelas cariocas tem trabalho com carteira assinada. 
-              Os dados divulgados essa semana, pelo coletivo Movimento, ainda mostram que 54% da 
+              Os dados divulgados<span id="pontos">...</span><span id="mais"> essa semana, pelo coletivo Movimento, ainda mostram que 54% da 
               população das comunidades analisadas perderam o emprego durante a pandemia. Para reverter 
-              esse cenário, projetos tentam integrar jovens de periferia à sociedade.
+              esse cenário, projetos tentam integrar jovens de periferia à sociedade.</span><a onclick="vermais()" id="btnVerMais">Ver mais</a>
             </p>
           </div>
           <a href="https://www.band.uol.com.br/rio-de-janeiro/noticias/jovens-de-periferia-do-rio-e-de-niteroi-recebem-oportunidade-academica-16451706"
@@ -298,11 +313,11 @@
             </h5>
             <p class="subtitulo-noticias">Voz das Comunidades</p>
             <p class="card-text">
-              As inscrições para o processo seletivo do Favela Inova 2.0 estão abertas. O programa é para jovens 
-              de 18 a 29 anos, moradores de favela que tenham uma proposta de negócio, ideia de projeto ou empresa.
+              As inscrições para o processo seletivo do Favela Inova 2.0<span id="pontos">...</span><span id="mais"> estão abertas. O programa é para jovens 
+              de 18 a anos, moradores de favela que tenham uma proposta de negócio, ideia de projeto ou empresa.
               O Favela Inova 2.0 é uma iniciativa do Polo de Inovação da Unisuam (Pólen) com a Secretaria Especial 
               de Juventude (JUVRio). A ideia é atrair e promover novos negócios de jovens empreendedores, além de 
-              potencializar a economia e o empreendedorismo dos territórios.
+              potencializar a economia e o empreendedorismo dos territórios.</span><a onclick="vermais()" id="btnVerMais">Ver mais</a>
             </p>
           </div>
           <a href="https://www.vozdascomunidades.com.br/geral/video-estao-abertas-as-inscricoes-para-o-favela-inova-2-0-iniciativa-do-polen-unisuam-com-a-juvrio/" 

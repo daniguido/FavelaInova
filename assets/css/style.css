@@ -1,7 +1,23 @@
+@font-face{
+  font-family: 'unisuam';
+  src: url('assets/unisans_familia/Uni Sans Thin.otf') format('opentype'), url('assets/unisans_familia/Uni Sans Thin.ttf') format('truetype'), 
+  url('Uni Sans.ttf') format('truetype'); 
+}
+/*url('Uni Sans Bold Italic.ttf') format('truetype'), url('Uni Sans Bold.ttf') format('truetype'), 
+  url('Uni Sans Book Italic.ttf') format('truetype'), url('Uni Sans Book.ttf') format('truetype'), 
+  url('Uni Sans Heavy Italic.ttf') format('truetype'), url('Uni Sans Heavy Italic.otf') format('opentype'), 
+  url('Uni Sans Heavy.otf') format('opentype'), url('Uni Sans Heavy.ttf') format('truetype'), 
+  url('Uni Sans Italic.ttf') format('truetype'), 
+  url('Uni Sans Light Italic.ttf') format('truetype'), url('Uni Sans Light.ttf') format('truetype'), 
+  url('Uni Sans SemiBold Italic.ttf') format('truetype'), url('Uni Sans SemiBold.ttf') format('truetype'), 
+  url('Uni Sans Thin Italic.otf') format('opentype'), url('Uni Sans Thin Italic.ttf') format('truetype'), */
 body{
   background-color: #dddddd; 
 }
-
+.navbar{
+  background-color: #17426d;
+  
+}
 /* MENU */
 nav li {
   list-style: none;
@@ -9,12 +25,12 @@ nav li {
   margin: 15px;
 }
 .navlink {
-  color: #ffffff;
+  color: #f7ce17;
   font-size: 14px;
   display: inline-block;
 }
 .navitem a:hover, .navlink:active{ 
-  color: #ef7d00 !important;
+  color: #ea5a33 !important;
   border-bottom: #ea5a33 4px  solid;
   display: block;
   font-size: 100%;
@@ -185,27 +201,99 @@ a {
 
 
 /*     IMPRENSA      */
-/* Modelo da caixa de texto */
-.block-with-text {
+
+
+#mais{
+  display: none;
+}
+#btnVerMais{
+  color: blue;
+  cursor: pointer;
+  
+}
+.card-body{
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+}
+.col-sm-3{
+  height: max-content;
+}
+/**** FUNCIONOU 1
+.hidden{
+  display:none;
+}
+input{
+  display: block;
+}
+*/
+
+
+
+/*.card-body{
+  display: contents;
+}*/
+
+/*.card{
+  max-height: min-content; /*min-content*/
+/*  overflow: hidden;
+  position: relative;
+
+  display:flex;
+  flex-direction: column;
+  word-wrap: break-word;
+  background-color: #ffffff;
+  background-clip: border-box;
+  border-radius: 0.25rem;
+}
+.card-body{
+  max-height: 70%;
+  overflow: hidden;
+  position: relative;
+  transition: max-height 0,4s ease;
+}
+.card-text{
+  max-height: 70%;
+  overflow: hidden;
+  position: relative;
+  transition: max-height 0,4s ease;
+}
+.overflow{
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left:0;
+  width: 100px;
+  height: 30px;
+}
+.overflow[data-state="visible"]{
+  display: block;
+}*/
+
+
+ /* Modelo da caixa de texto */
+/* .block-with-text {
   overflow: hidden;
   position: relative;
   line-height: 1.2em;
-  max-height: 6em; /* aqui vc controla a altura da caixa de texto */
+  max-height: 6em; /* aqui vc controla a altura da caixa de texto 
   text-align: justify;
-}
-.block-with-text:before {
-  content: '...';
+}*/
+/* .block-with-text:before {
+  content: '...Mais';
   position: absolute;
   right: 0px;
   bottom: 0;
   background-color: #ffffff;
-  padding: 0 0px 0 0.25em;
-}
-.block-with-text::after, .block-with-text:active{ /* .navlink:active*/
+  padding: 0px 17px 2px 0.25em;
+  color: blue;
+} */
+/*.block-with-text:after, .block-with-text:active{ 
   overflow: visible; /*Deixa visivel*/
-  height: 100%;
+ /* height: 100%;
+  position: absolute;
+  padding: 0px 0px 0px 0.25em;
   
-}
+} */
 
 .conteudo-img-card { 
   height: 190px;
@@ -242,7 +330,7 @@ a {
 
 /*       DIV SOMOS      */
 .hero-image {   /* fundo */  
-  background-image: linear-gradient(rgba(82, 80, 80, 0.37), rgba(8, 8, 8, 0.829)),
+  background-image: linear-gradient(#17426d, #0f96ae),
     url("../images/home/hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -270,8 +358,8 @@ a {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: rgb(31, 31, 31);
-  color: rgb(255, 251, 251);
+  background-color: #17426d;
+  color: #f5c200;
   list-style: none;
 }
 .footer .endereco {
@@ -374,6 +462,6 @@ a {
 }
 
 .email{
-  color: #ffffff;
+  color: #f5c200;
 }
 /*    FIM RODAPÉ      */

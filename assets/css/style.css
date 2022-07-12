@@ -13,29 +13,69 @@
   url('Uni Sans Thin Italic.otf') format('opentype'), url('Uni Sans Thin Italic.ttf') format('truetype'), */
 body{
   background-color: #dddddd; 
+  font-family: "unisuam";
+  font-size: 17px;
 }
 .navbar{
   background-color: #17426d;
   
 }
 /* MENU */
+.navbar-nav{
+  padding-left:6%;
+}
 nav li {
   list-style: none;
   cursor: pointer;
   margin: 15px;
 }
 .navlink {
-  color: #f7ce17;
-  font-size: 14px;
+  color: #dddddd;
+  font-size: 15px;
   display: inline-block;
 }
 .navitem a:hover, .navlink:active{ 
-  color: #ea5a33 !important;
-  border-bottom: #ea5a33 4px  solid;
+  color: #EF7D00 !important;
+  border-bottom: #EF7D00 4px  solid;
   display: block;
   font-size: 100%;
 }
 /* FIM MENU */
+
+/***   DIV SOMOS   ***/
+.hero-image {   /* fundo */  
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/home/hero.jpg);
+
+ 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 512px;
+}
+.hero-text {      /* textos*/
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+.favelacor{     
+  color: #0a0909e3;
+}
+.inovacor{      
+  color: #1f1d1dcb;
+} /* FIM textos*/
+.fs-2 {
+  font-size: calc(1.325rem + 0.9vw)!important;
+  margin-right: 56%;
+  text-align: right;
+}
+.fs-1 {
+  margin-left: 15%;
+}
+.img{
+  width: 18%;
+}
+/***   FIM DIV SOMOS   ***/
+
 
 a {
   color:rgb(255, 255, 255);
@@ -54,7 +94,7 @@ a {
   width: 95%;
 }
 .font {
-/*  font-family: "Anton", sans-serif;*/
+  font-family: "unisuam";
   margin: 0;
   /*color: #b0afb3;*/
   opacity: 0.8;
@@ -74,64 +114,54 @@ a {
 
 
 
-/*.carousel {
-  width: 100%;
-  min-height: 500px;
-}
-.carousel-inner {
-  width: 100%;
-  height: 500px;
-}*/
-
 .text-justify {
   text-align: justify;
 }
 
-.fundo-favelainova { /*Missao*/
-  background-color: #181616;
-  color: #fff;
+/****   Missao   ****/
+.fundo-favelainova { 
+  color: #000000;
+  background-image : linear-gradient(#EA5A33, #EF7D00);
 }
-
-.color-favelainova {
-  color: #2b3e64;
-}
-
-.destaque-favelainova {
-  font-family: "Raleway", sans-serif;
-  font-size: 2rem;
-  font-weight: 800;
-  text-transform: uppercase;
-}
-
-
-.cabecalho-favelainova {    /*OBJETIVOS*/
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-}
-
 .missao {
-  font-family: "Raleway", sans-serif;
+  font-family: "unisuam";
   font-size: 32px;
 }
-
 .missao strong {
   font-weight: 600;
 }
 
-.icone-objetivo {
-  font-size: 48px;
-  color: #676767;
+/*.color-favelainova {
+  color: #EA5A33;
+}*/
 
+.destaque-favelainova {
+  font-family: "unisuam";
+  font-size: 2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  display: contents;
+
+}
+
+
+.cabecalho-favelainova {    /*** OBJETIVOS ***/
+  font-family: "unisuam";
+  font-weight: 600;
+  color: #17426d;
 }
 .icon{
   width: 70px;
   height: 70px;
 }
+.mt-3 {
+  margin-top: 1rem!important;
+  color: #17426D;
+}
 
 /*    PARCEIROS   */
 .text{
   font-size: 15px;
-  color: #000000;
   text-align: center;
 }
 .parceiros-colecao {
@@ -150,11 +180,7 @@ a {
   flex-wrap: wrap;
   justify-content: center;
 }
-/*.parceiros-conjuto{ 
-  width: 265px;
-  height: 185px;    
- }*/
- .parceiros-item2{
+.parceiros-item2{
   width: 190px;
   height: 140px;
   margin: 15px 40px;
@@ -169,19 +195,18 @@ a {
 }
 /*    FIM PARCEIROS   */
  
-/*      PROJETOS      */
+
+/***    PROJETOS    ****/
 .projetos-foto {
   width: 150px;
   height: 150px;
   object-fit: cover;
 }
-
-
 .favelacorN{     
   color: #db0303f3;
 }
 .projetos-titulo {
-  font-family: "Raleway", sans-serif;
+  font-family: "unisuam";
   font-weight: 600;
 }
 .projetos-coordenacao {
@@ -196,13 +221,10 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-/*     FIM PROJETO     */
+}/*     FIM PROJETO     */
 
 
-/*     IMPRENSA      */
-
-
+/***   IMPRENSA   ***/
 #mais1{
   display: none;
 }
@@ -227,7 +249,6 @@ a {
 #mais8{
   display: none;
 }
-
 
 #btnVerMais1{
   color: blue;
@@ -270,90 +291,13 @@ a {
 .col-sm-3{
   height: max-content;
 }
-/**** FUNCIONOU 1
-.hidden{
-  display:none;
-}
-input{
-  display: block;
-}
-*/
-
-
-
-/*.card-body{
-  display: contents;
-}*/
-
-/*.card{
-  max-height: min-content; /*min-content*/
-/*  overflow: hidden;
-  position: relative;
-
-  display:flex;
-  flex-direction: column;
-  word-wrap: break-word;
-  background-color: #ffffff;
-  background-clip: border-box;
-  border-radius: 0.25rem;
-}
-.card-body{
-  max-height: 70%;
-  overflow: hidden;
-  position: relative;
-  transition: max-height 0,4s ease;
-}
-.card-text{
-  max-height: 70%;
-  overflow: hidden;
-  position: relative;
-  transition: max-height 0,4s ease;
-}
-.overflow{
-  display: none;
-  position: absolute;
-  bottom: 0;
-  left:0;
-  width: 100px;
-  height: 30px;
-}
-.overflow[data-state="visible"]{
-  display: block;
-}*/
-
-
- /* Modelo da caixa de texto */
-/* .block-with-text {
-  overflow: hidden;
-  position: relative;
-  line-height: 1.2em;
-  max-height: 6em; /* aqui vc controla a altura da caixa de texto 
-  text-align: justify;
-}*/
-/* .block-with-text:before {
-  content: '...Mais';
-  position: absolute;
-  right: 0px;
-  bottom: 0;
-  background-color: #ffffff;
-  padding: 0px 17px 2px 0.25em;
-  color: blue;
-} */
-/*.block-with-text:after, .block-with-text:active{ 
-  overflow: visible; /*Deixa visivel*/
- /* height: 100%;
-  position: absolute;
-  padding: 0px 0px 0px 0.25em;
-  
-} */
-
 .conteudo-img-card { 
   height: 190px;
   object-fit: cover;
   object-position: center center;
 }
 .titulo-noticias {
-  font-family: "Raleway", sans-serif;
+  font-family: "unisuam";
   font-size: 18px;
   font-weight: 700;
 }
@@ -362,7 +306,8 @@ input{
   color: #7a7d6c;
   font-weight: 600;
   text-transform: uppercase;
-}
+}/***  FIM IMPRENSA  ***/
+
 
 .link-unstyled,
 .link-unstyled:link,
@@ -371,38 +316,15 @@ input{
   text-decoration: inherit;
 }
 
-
 .display-1,
 .display-2,
 .display-3 {
-  font-family: "Raleway", sans-serif;
+  font-family: "unisuam";
 }
 
 
 
-/*       DIV SOMOS      */
-.hero-image {   /* fundo */  
-  background-image: linear-gradient(#17426d, #0f96ae),
-    url("../images/home/hero.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 512px;
-}
-.hero-text {      /* textos*/
-  color: rgb(255, 255, 255);
-  text-align: center;
-  text-shadow: 2px 2px 4px rgb(0, 0, 0);
-}
-.favelacor{     
-  color: #0a0909e3;
-  text-shadow: 2px 2px 15px rgb(255, 253, 253);
-}
-.inovacor{      
-  color: #1f1d1dcb;
-  text-shadow: 2px 2px 15px rgb(255, 253, 253);
-} /* FIM textos*/
-/*      FIM DIV SOMOS       */
+
 
 /*      RODAPÉ      */
 .footer {
@@ -411,21 +333,23 @@ input{
   bottom: 0;
   width: 100%;
   background-color: #17426d;
-  color: #f5c200;
+  color: #ffffff;
   list-style: none;
 }
 .footer .endereco {
-  font-size: 16px;
+  font-size: 17px;
 }
 .footer .endereco h4 {
   font-size: 16px;
   margin-top: 0.25rem;
   margin-bottom: 0;
+  margin-left: 17px;
 }
 .footer .endereco span {
   display: block;
   margin-top: 0.25rem;
   margin-bottom: 0;
+  margin-left: 17px;
 }
 .rounded-social-buttons {
   text-align: right;
@@ -440,7 +364,7 @@ input{
   padding: 0;
   text-decoration: none;
   text-align: center;
-  color: #fefefe;
+  color: #ffffff;
   font-size: 1.5625rem;
   font-weight: normal;
   line-height: 2em;
@@ -460,60 +384,44 @@ input{
 .fa-instagram {
   font-size: 70px;
 }
-/*.rounded-social-buttons .social-button.linkedin {
-  background: #007bb5;
-}
-.rounded-social-buttons .social-button.linkedin:hover,
-.rounded-social-buttons .social-button.linkedin:focus {
-  color: #007bb5;
-  background: #fefefe;
-  border-color: #007bb5;
-}*/
 .rounded-social-buttons .social-button.instagram {
-  background: #125688;
+  background: #17426D;
+  border-color: #ffffff;
 }
 .rounded-social-buttons .social-button.instagram:hover,
 .rounded-social-buttons .social-button.instagram:focus {
-  color: #125688;
-  background: #fefefe;
-  border-color: #125688;
+  color: #17426D;
+  background: #ffffff;
+  border-color: #0F96AE;
 } 
-
-
 
 .rounded-maps-buttons {
   text-align: right;
-
 }
 .rounded-maps-buttons .maps-button {
   display: inline-block;
   position: relative;
   cursor: pointer;
-  width: 18rem;
+  width: 22rem;
   height: 4rem;
   border: 0.25rem solid transparent;
-  padding: 0;
+  padding-left: 124px;
+  padding-top: 18px;
   text-decoration: none;
   text-align: center;
   color: #ffffff;
   font-size: 17px;
-
 }
 .rounded-maps-buttons .maps-button:hover,
 .rounded-maps-buttons .maps-button:focus {
-/*  -webkit-transform: rotate(360deg);
-  -ms-transform: rotate(360deg);
-  transform: rotate(360deg);*/
-  font-size: 18px;
+  font-size: 19px;
 }
 .rounded-maps-buttons,
-/*.fa-linkedin,*/
 .fa-map-marker-alt {
   font-size: 25px;
-  color:tomato;
+  color: #EA5A33;
 }
-
 .email{
-  color: #f5c200;
+  color: #ffffff;
 }
 /*    FIM RODAPÉ      */

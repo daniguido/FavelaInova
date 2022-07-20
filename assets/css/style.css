@@ -82,7 +82,7 @@ a {
   text-decoration: none;
 }
 
-.projetosH {
+.programasH {
   min-height: 96px;
 }
 
@@ -196,8 +196,8 @@ a {
 /*    FIM PARCEIROS   */
  
 
-/***    PROJETOS    ****/
-.projetos-foto {
+/***    PROGRAMAS    ****/
+.programas-foto {
   width: 150px;
   height: 150px;
   object-fit: cover;
@@ -205,18 +205,18 @@ a {
 .favelacorN{     
   color: #db0303f3;
 }
-.projetos-titulo {
+.programas-titulo {
   font-family: "unisuam";
   font-weight: 600;
 }
-.projetos-coordenacao {
+.programas-coordenacao {
   text-transform: uppercase;
 }
-.projetos-foto {
+.programas-foto {
   width: 230px;
   height: 230px;
 }
-.projetos-foto img {
+.programas-foto img {
   border-radius: 16px;
   width: 100%;
   height: 100%;

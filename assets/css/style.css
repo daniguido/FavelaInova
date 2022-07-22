@@ -1,20 +1,22 @@
-@font-face{
-  font-family: 'unisuam';
-  src: url('assets/unisans_familia/Uni Sans Thin.otf') format('opentype'), url('assets/unisans_familia/Uni Sans Thin.ttf') format('truetype'), 
-  url('Uni Sans.ttf') format('truetype'); 
-}
-/*url('Uni Sans Bold Italic.ttf') format('truetype'), url('Uni Sans Bold.ttf') format('truetype'), 
-  url('Uni Sans Book Italic.ttf') format('truetype'), url('Uni Sans Book.ttf') format('truetype'), 
-  url('Uni Sans Heavy Italic.ttf') format('truetype'), url('Uni Sans Heavy Italic.otf') format('opentype'), 
-  url('Uni Sans Heavy.otf') format('opentype'), url('Uni Sans Heavy.ttf') format('truetype'), 
-  url('Uni Sans Italic.ttf') format('truetype'), 
-  url('Uni Sans Light Italic.ttf') format('truetype'), url('Uni Sans Light.ttf') format('truetype'), 
-  url('Uni Sans SemiBold Italic.ttf') format('truetype'), url('Uni Sans SemiBold.ttf') format('truetype'), 
-  url('Uni Sans Thin Italic.otf') format('opentype'), url('Uni Sans Thin Italic.ttf') format('truetype'), */
+@font-face {
+  font-family: "Uni Sans";
+  src: url('../unisans_familia/Uni Sans.ttf') format('truetype'), 
+  url("../unisans_familia/UniSansLight.ttf") format('truetype'), url('../unisans_familia/Uni Sans Light Italic.ttf') format('truetype'), 
+  url('../unisans_familia/Uni Sans Thin.otf') format('opentype'), url('../unisans_familia/Uni Sans Thin.ttf') format('truetype'), 
+  url('../unisans_familia/UniSansBoldItalic.ttf') format('truetype'), url('../unisans_familia/Uni Sans Bold.ttf') format('truetype'), 
+  url('../unisans_familia/Uni Sans Book Italic.ttf') format('truetype'), url('../unisans_familia/Uni Sans Book.ttf') format('truetype'), 
+  url('../unisans_familia/Uni Sans Heavy Italic.ttf') format('truetype'), url('../unisans_familia/Uni Sans Heavy Italic.otf') format('opentype'), 
+  url('../unisans_familia/Uni Sans Heavy.otf') format('opentype'), url('../unisans_familia/Uni Sans Heavy.ttf') format('truetype'), 
+  url('../unisans_familia/Uni Sans Italic.ttf') format('truetype'), 
+  url('../unisans_familia/Uni Sans SemiBold Italic.ttf') format('truetype'), url('../unisans_familia/Uni Sans SemiBold.ttf') format('truetype'), 
+  url('../unisans_familia/Uni Sans Thin Italic.otf') format('opentype'), url('../unisans_familia/Uni Sans Thin Italic.ttf') format('truetype');
+
+} 
+
 body{
-  background-color: #dddddd; 
-  font-family: "unisuam";
-  font-size: 17px;
+  font-size: 15px;
+  font-family: "Uni Sans";
+
 }
 .navbar{
   background-color: #17426d;
@@ -87,18 +89,12 @@ a {
 }
 
 
-
 /* EDITAL */
 .myCard { 
   margin: 20px auto;
   width: 95%;
 }
-.font {
-  font-family: "unisuam";
-  margin: 0;
-  /*color: #b0afb3;*/
-  opacity: 0.8;
-}
+
 .btn a:hover{
   color: #767779 !important;
 }
@@ -124,8 +120,7 @@ a {
   background-image : linear-gradient(#EA5A33, #EF7D00);
 }
 .missao {
-  font-family: "unisuam";
-  font-size: 32px;
+  font-size: 22px;
 }
 .missao strong {
   font-weight: 600;
@@ -136,17 +131,14 @@ a {
 }*/
 
 .destaque-favelainova {
-  font-family: "unisuam";
   font-size: 2rem;
   font-weight: 800;
   text-transform: uppercase;
   display: contents;
-
 }
 
 
 .cabecalho-favelainova {    /*** OBJETIVOS ***/
-  font-family: "unisuam";
   font-weight: 600;
   color: #17426d;
 }
@@ -157,6 +149,9 @@ a {
 .mt-3 {
   margin-top: 1rem!important;
   color: #17426D;
+}
+.text-justify .mt-3{
+  text-align: left;
 }
 
 /*    PARCEIROS   */
@@ -206,7 +201,6 @@ a {
   color: #db0303f3;
 }
 .programas-titulo {
-  font-family: "unisuam";
   font-weight: 600;
 }
 .programas-coordenacao {
@@ -300,7 +294,6 @@ hr {
   object-position: center center;
 }
 .titulo-noticias {
-  font-family: "unisuam";
   font-size: 18px;
   font-weight: 700;
 }
@@ -318,13 +311,12 @@ hr {
   color: inherit;
   text-decoration: inherit;
 }
-
+/*
 .display-1,
 .display-2,
 .display-3 {
-  font-family: "unisuam";
 }
-
+*/
 
 
 
@@ -398,28 +390,25 @@ hr {
   border-color: #0F96AE;
 } 
 
-.rounded-maps-buttons {
-  text-align: right;
-}
-.rounded-maps-buttons .maps-button {
-  display: inline-block;
+
+.maps-button {
   position: relative;
   cursor: pointer;
-  width: 22rem;
-  height: 4rem;
-  border: 0.25rem solid transparent;
-  padding-left: 124px;
+
   padding-top: 18px;
   text-decoration: none;
   text-align: center;
   color: #ffffff;
   font-size: 17px;
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+  margin-left: 15px;
 }
-.rounded-maps-buttons .maps-button:hover,
-.rounded-maps-buttons .maps-button:focus {
+.maps-button:hover,
+.maps-button:focus {
   font-size: 19px;
 }
-.rounded-maps-buttons,
+
 .fa-map-marker-alt {
   font-size: 25px;
   color: #EA5A33;
